@@ -43,14 +43,29 @@ print("Time using loop : {}[s]".format(elapsed_time))
 for i in range(len(data)):
     data[i] *= THICKNESS
 
-
+#Graph 1
 plt.title("thickness of folded paper")
 plt.xlabel("number of folds")
 plt.ylabel("thickness[m]")
-
 plt.plot(data, color='green', marker='o',
          linestyle='dotted', linewidth=3, markersize=0.5)
 plt.tick_params(labelsize=20)
+plt.show()
+
+#Graph 2
+plt.title("thickness of folded paper")
+plt.xlabel("number of folds")
+plt.ylabel("thickness[m]")
+plt.plot(data, color='yellow', marker='o',
+         linestyle='dashed', linewidth=1)
+plt.tick_params(labelsize=20)
+plt.show()
+
+#Graph 3
+plt.title("thickness of folded paper")
+plt.xlabel("number of folds")
+plt.ylabel("thickness[m]")
+plt.plot(data, color='blue')
 plt.show()
 print("The thickness is changing exponentially!")
 
